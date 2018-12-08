@@ -1,6 +1,9 @@
-{{ define "title" }}
-  {{ .Title }} · {{ .Site.Title }}
+{{ define "main" }}
+<article class="markdown">
+  {{- .Content -}}
+</article>
 {{ end }}
-{{ define "content" }}
-  {{ partial "page.html" . }}
+
+{{ define "toc" }}
+  {{ partial "docs/toc" . }}
 {{ end }}
