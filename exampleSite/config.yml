@@ -3,7 +3,7 @@
 baseURL: https://example.com
 title: Hugo Book
 theme: hugo-book
-# themesDir: ../..
+themesDir: ../..
 
 # Book configuration
 disablePathToLower: true
