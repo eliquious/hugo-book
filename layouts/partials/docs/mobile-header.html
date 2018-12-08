@@ -1,6 +1,8 @@
-<header class="align-center justify-between book-header">
-  <label for="menu-control">
-    <img src="{{ "svg/menu.svg" | absURL }}" />
+<header class="align-center book-header">
+  <label for="menu-control" style="margin-right: 24px">
+    {{ with .Site.Params.godoc }}
+      <img src="{{ . }}" alt="menu"/>
+    {{ end }}
   </label>
   <strong>{{- template "title" . }}</strong>
 </header>
